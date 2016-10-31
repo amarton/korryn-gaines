@@ -1,0 +1,871 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"orig",
+				"originalData"
+			],
+			[
+				"race",
+				"racetype"
+			],
+			[
+				"ug",
+				"uglify-js"
+			],
+			[
+				"svg",
+				"svg-sprite-generator"
+			],
+			[
+				"cm",
+				"compileSass"
+			],
+			[
+				"compil",
+				"compileJade"
+			],
+			[
+				"comp",
+				"compileSass"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/index.pug",
+			"settings":
+			{
+				"buffer_size": 3543,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dist/index.html",
+			"settings":
+			{
+				"buffer_size": 3272,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 1845,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 17,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/includes/omniture.html",
+			"settings":
+			{
+				"buffer_size": 657,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/js/javascript.js",
+			"settings":
+			{
+				"buffer_size": 2818,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/scss/style.scss",
+			"settings":
+			{
+				"buffer_size": 1271,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dist/css/style.css",
+			"settings":
+			{
+				"buffer_size": 10880,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/scss/fontello/css/fontello.css",
+			"settings":
+			{
+				"buffer_size": 2078,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/scss/_variables.scss",
+			"settings":
+			{
+				"buffer_size": 321,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/scss/_mixins.scss",
+			"settings":
+			{
+				"buffer_size": 897,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pug",
+				"Build With: Pug"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package control ",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Enable Package"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jikim/Documents/bsun/online/org/2016/11/korryn-gaines",
+		"/Users/jikim/Documents/bsun/online/org/2016/11/korryn-gaines/dist",
+		"/Users/jikim/Documents/bsun/online/org/2016/11/korryn-gaines/dist/css",
+		"/Users/jikim/Documents/bsun/online/org/2016/11/korryn-gaines/src",
+		"/Users/jikim/Documents/bsun/online/org/2016/11/korryn-gaines/src/images",
+		"/Users/jikim/Documents/bsun/online/org/2016/11/korryn-gaines/src/includes",
+		"/Users/jikim/Documents/bsun/online/org/2016/11/korryn-gaines/src/js",
+		"/Users/jikim/Documents/bsun/online/org/2016/11/korryn-gaines/src/scss",
+		"/Users/jikim/Documents/bsun/online/org/2016/11/korryn-gaines/src/scss/fontello",
+		"/Users/jikim/Documents/bsun/online/org/2016/11/korryn-gaines/src/scss/fontello/css"
+	],
+	"file_history":
+	[
+		"/Users/jikim/Documents/bsun/online/org/2016/11/korryn-gaines/src/scss/_fonts.scss",
+		"/Users/jikim/Documents/bsun/online/org/2016/11/korryn-gaines/src/scss/fontello/css/fontello.css",
+		"/Users/jikim/Documents/bsun/online/org/2016/<04/oldMac/tased/index.jade",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-2/index 2.html",
+		"/Users/jikim/Documents/bsun/online/org/2016/10/all-tests/src/includes/ad-for-body.html",
+		"/Users/jikim/Documents/bsun/online/org/2016/10/middle/src/includes/tophat.pug",
+		"/Users/jikim/Documents/bsun/online/org/2016/10/high/dist/index.html",
+		"/Users/jikim/Documents/bsun/online/org/2016/10/parcc-2016-ranks/src/high/index.pug",
+		"/Users/jikim/Documents/bsun/online/org/2016/10/parcc-2016-ranks/src/mid/index.pug",
+		"/Users/jikim/Documents/bsun/online/org/2016/10/parcc-2016-ranks/src/elem/index.pug",
+		"/Users/jikim/Documents/bsun/online/org/2016/10/parcc-2016-ranks/src/js/javascript.js",
+		"/Users/jikim/Documents/bsun/online/org/2016/10/parcc-2016-ranks/src/includes/data.pug",
+		"/Users/jikim/Documents/bsun/online/org/2016/10/parcc-2016-ranks/src/includes/dataHigh.pug",
+		"/Users/jikim/Documents/bsun/online/org/2016/10/parcc-2016-ranks/src/includes/dataMid.pug",
+		"/Users/jikim/Documents/bsun/online/org/2016/10/parcc-2016-ranks/src/includes/dataElem.pug",
+		"/Users/jikim/Documents/bsun/online/org/2016/10/parcc-2016-ranks/dist/index.html",
+		"/Users/jikim/Documents/bsun/online/org/2016/10/parcc-2016-ranks/.gitignore",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-2/index.html",
+		"/Users/jikim/elex/elexNatl.sh",
+		"/Users/jikim/.bash_profile",
+		"/Users/jikim/generalResults.json",
+		"/Users/jikim/results.json",
+		"/Users/jikim/elex/cron.txt",
+		"/Users/jikim/elex/emergency.py",
+		"/Users/jikim/elex/elex.pyc",
+		"/Users/jikim/1461599581results.json",
+		"/Users/jikim/elex/elex-national.py",
+		"/Users/jikim/elex/elex-national.sh",
+		"/Users/jikim/1461599401results.json",
+		"/Users/jikim/1461264181toParse.json",
+		"/Users/jikim/elex/results.json",
+		"/Users/jikim/jsonPrecincts.json",
+		"/Users/jikim/elex/jsonPrecincts.json",
+		"/Users/jikim/1461002701toParse.json",
+		"/Users/jikim/elex/1460748924toParse.json",
+		"/Users/jikim/Documents/bsun/online/org/2016/04/races.json",
+		"/Users/jikim/elex/national.json",
+		"/Users/jikim/elex/toParse.json",
+		"/Users/jikim/elex/races.json",
+		"/Users/jikim/elex/reporting-units.json",
+		"/Users/jikim/elex/jsonM.json",
+		"/Users/jikim/elex/state.json",
+		"/Users/jikim/elex/jsonS.json",
+		"/Users/jikim/elex/jsonP.json",
+		"/Users/jikim/elex/jsonN.json",
+		"/Users/jikim/elex/jsonL.json",
+		"/Users/jikim/elex/jsonH.json",
+		"/Users/jikim/elex/elex.py",
+		"/Users/jikim/elex/json0.json",
+		"/Users/jikim/Desktop/output.json",
+		"/Users/jikim/elex/elections.json",
+		"/Users/jikim/elex/ballot-issues.json",
+		"/Users/jikim/elex/output.json",
+		"/Users/jikim/.ssh/id_rsa",
+		"/Users/jikim/Documents/bsun/online/org/PASS-FOR-JIN-TEMP.html",
+		"/Users/jikim/elex/results.csv",
+		"/Users/jikim/elex/elex.sh",
+		"/Users/jikim/elex.sh",
+		"/Users/jikim/elex/cron",
+		"/Users/jikim/elex.py",
+		"/Users/jikim/sample.json",
+		"/Users/jikim/bin/cron",
+		"/Users/jikim/bin/test",
+		"/Users/jikim/Desktop/get-ap-election-data/AP-Election-Data-Instructions",
+		"/Users/jikim/Desktop/elex.py",
+		"/usr/local/bin/elex",
+		"/Users/jikim/bin/results.json",
+		"/Users/jikim/bin/elex.py",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/results.json",
+		"/Users/jikim/elex.pyc",
+		"/bin/bash",
+		"/Users/jikim/Documents/bsun/online/elections2016/elex.py",
+		"/Users/jikim/Documents/bsun/online/elex.py",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/ElectionTables.sql",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/Utils.php",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/ftp_class.php",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/Database.php",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/config.php",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/getResults.php",
+		"/Users/jikim/Documents/bsun/online/elections2016/AP-Election-Data-Instructions",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/AP-Election-Data-Instructions",
+		"/Users/jikim/Documents/bsun/online/elections2016/config/config.php",
+		"/Users/jikim/Documents/bsun/online/elections2016/classes/ftp_class.php",
+		"/Users/jikim/Documents/bsun/online/elections2016/classes/Database.php",
+		"/Users/jikim/Documents/bsun/online/elections2016/package.json",
+		"/Users/jikim/Desktop/get-ap-election-data/getResults.php",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/sharecode.txt",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/ethel_legacy.php",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/class.controller.php",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/default 2.css",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/default.css",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/basic-slider-config-fields 2.php",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/configdb 2.php",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/index 2.php",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/config 2.php",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/class.model.php",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/class.view.php",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/configdb.php",
+		"/private/var/folders/by/2wnsp1w10wg42rhs8k_sjmk5grbkq6/T/fz3temp-1/basic-slider-config-fields.php",
+		"/Users/jikim/Documents/bsun/online/template/src/index.jade",
+		"/Users/jikim/Documents/bsun/online/template/src/js/javascript.js",
+		"/Users/jikim/Documents/bsun/online/template/package.json",
+		"/Users/jikim/Documents/bsun/online/template/src/sass/style.sass",
+		"/Users/jikim/Documents/bsun/online/template/src/sass/_fonts.scss",
+		"/Users/jikim/Documents/bsun/online/final-test/src/index.jade",
+		"/Users/jikim/Documents/bsun/online/final-test/package.json",
+		"/Users/jikim/Documents/bsun/online/final-test/dist/css/style.css",
+		"/Users/jikim/Documents/bsun/online/final-test/src/sass/style.sass",
+		"/Users/jikim/Documents/bsun/online/final-test/src/sass/_fonts.scss",
+		"/Users/jikim/Documents/bsun/online/--web-project-jade/src/index.jade",
+		"/Users/jikim/Documents/bsun/online/--web-project-jade/src/sass/style.sass",
+		"/Users/jikim/Documents/bsun/online/--web-project-jade/src/js/javascript.js",
+		"/Users/jikim/Documents/bsun/online/--web-project-jade/package.json",
+		"/Users/jikim/Documents/bsun/online/--web-project-jade/dist/index.html",
+		"/Users/jikim/Documents/bsun/online/test3/src/js/min/jquery-1.10.2.min.js",
+		"/Users/jikim/Documents/bsun/online/test3/package.json",
+		"/Users/jikim/Documents/bsun/online/test/package.json",
+		"/Users/jikim/Documents/bsun/online/test2/package.json",
+		"/Users/jikim/Documents/bsun/PASS-FOR-JIN-TEMP.html",
+		"/Users/jikim/Documents/bsun/online/md-shootings-near-you/stylesheets/style.css",
+		"/Users/jikim/Documents/bsun/online/workspace-test/index.jade",
+		"/Users/jikim/Documents/bsun/online/workspace-test/index.html",
+		"/Users/jikim/Documents/bsun/online/workspace-test/package.json",
+		"/Users/jikim/Documents/bsun/online/workspace-test/scripts/javascript.js",
+		"/Users/jikim/Documents/bsun/online/workspace-test/stylesheets/css/style.css",
+		"/Users/jikim/Documents/bsun/online/workspace-test/stylesheets/sass/_mixins.sass",
+		"/Users/jikim/Documents/bsun/online/workspace-test/stylesheets/sass/_variables.sass",
+		"/Users/jikim/Documents/bsun/online/workspace-test/stylesheets/sass/style.sass"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"./font",
+			"('../font/fontello",
+			"USERNAME",
+			"PROJ-NAME-HERE",
+			"PROJECTLINK",
+			"news/parcc2016",
+			"Maryland",
+			"parcc-2016-ranked",
+			"Elementary",
+			"Middle",
+			"High",
+			"Elementary",
+			"Compare Maryland PARCC scores using this handy table",
+			"parccTable",
+			"},{",
+			"USERNAME",
+			"parcc-2016",
+			",\n",
+			"generalResults",
+			"cleanResults",
+			"22587",
+			"precinctsreporting\": 0",
+			"precinctsreporting",
+			"precinctsreporting\": ",
+			"precinct",
+			"precinctsreporting\":",
+			"precinctsreport",
+			"last",
+			"output.json",
+			"', '",
+			"\nprint(sys.path)",
+			"'\n'",
+			"del element",
+			"results",
+			"# '",
+			"# ",
+			"\n            ",
+			"\n\t\t\t",
+			"\":",
+			"file_",
+			"107.23.7.167",
+			"port",
+			"server",
+			"0326",
+			"0426",
+			"0315",
+			"your mysql database ",
+			"PROJ-NAME-HERE",
+			"submit",
+			"final-test",
+			"../fonts",
+			"PROJ-NAME-HERE",
+			"scripts",
+			"web-project-template",
+			"107.23",
+			"ftp",
+			"environment"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"precinctsReporting"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/index.pug",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3167,
+								3167
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Pug/Syntaxes/Pug.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 377.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "dist/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1845,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17,
+								17
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/includes/omniture.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								334,
+								334
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "src/js/javascript.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2818,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/scss/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1050,
+								1050
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "dist/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10880,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/scss/fontello/css/fontello.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2078,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1972,
+								1986
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/scss/_variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/scss/_mixins.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								204,
+								204
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "korryn-gaines.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 211.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
