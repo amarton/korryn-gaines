@@ -1,0 +1,40 @@
+@import "mixins";
+@import "variables";
+// Sass mixins libraries
+@import "bourbon/bourbon";
+@import "neat/neat";
+// Base styles -- normalizes styles across browsers. 
+// Alter border-sizing styles to prevent issues in P2P HTML stories
+@import "normalize";
+@import "fonts";
+
+body {
+	color: $offblack;
+	font-size: 14px; // body-level font size for "em"-scaled designs
+}
+h1 {
+	font-family: $montserrat;
+}
+p,a {
+	font-family: $lato;
+}
+a {
+	color: $goldenrod;
+	text-decoration: none;
+}
+.container {
+	margin-top: 50px; // Pushes below topnav
+}
+
+
+/* Leaderboard */
+// #leaderboard {
+// 	width: 728px;
+// 	height: 90px;
+// 	background-color: #222222;
+// 	margin: 10px auto;
+// 	text-align: center;
+// 	@media (max-width: 730px){
+// 		display: none;
+// 	}
+// }
