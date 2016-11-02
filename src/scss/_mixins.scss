@@ -30,7 +30,7 @@
 		width: 100%;
 		padding-top: ($height/$width) * 100%;
 	}
-	> $childClass {
+	> #{$childClass} {
 		position: absolute;
 		top: 0;
 		bottom: 0;

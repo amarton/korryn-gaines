@@ -57,7 +57,7 @@ html(class="no-js", lang="en")
 		
 		.container
 			.slidesWrapper
-				.slide.slide--0.slide--splash
+				section.slide.slide--0.slide--splash
 					h1 The 6-hour standoff of
 						br
 						span Korryn Gaines
@@ -67,7 +67,7 @@ html(class="no-js", lang="en")
 					.button.button--splash(data-toslide='1')
 						p Begin
 						i.glyphicon.glyphicon-chevron-down
-				.slide.slide--content.slide--1
+				section.slide.slide--content.slide--1
 					.slideContentWrapper
 						h3 1:20 - 1:30
 						h2 HEADLINE HEADLINE HEAD 1
@@ -75,25 +75,33 @@ html(class="no-js", lang="en")
 							span 1 Lorem ipsum dolor sit amet 
 							| consectetur adipiscing elit. Cras egestas leo sit amet sem varius aliquet. Pellentesque tempus dignissim nunc, ac lobortis eros sodales sit amet. Duis rutrum vehicula metus rhoncus ultrices.
 						.media
-							img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
-							p.caption 1 Lorem ipsum dolor sit amet
+							.media__item.media__item--image.media__item--1-0.active
+								img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
+								p.caption 1 Lorem ipsum dolor sit amet
+							.media__item.media__item--av.media__item--1-1
+							.media__item.media__item--av.media__item--1-2
+						.mediaOverlay
+							.button.button--exit
+								i.glyphicon.glyphicon-remove
+							.docCloud
+								include includes/doc-test.html
 						.mediaList
 							h4 Multimedia
 							ul
 								li
-									.mediaWrapper
+									.mediaButton(data-media="1-0")
 										i.glyphicon.glyphicon-play-circle
 										p 11:11 p.m.: Video of police entering the apartment for the first time
 								li
-									.mediaWrapper
+									.mediaButton(data-media="1-1")
 										i.glyphicon.glyphicon-headphones
 										p Audio of 911 dispatch
 								li
-									.mediaWrapper
+									.mediaButton(data-media="1-2")
 										i.glyphicon.glyphicon-picture
 										p Photos taken from Gaines' cell phone
 								li
-									.mediaWrapper
+									.mediaButton(data-media="1-3")
 										i.glyphicon.glyphicon-folder-open
 										p Relevant documents
 						.buttonsWrap
@@ -103,7 +111,7 @@ html(class="no-js", lang="en")
 							.button.button--down(data-toslide='2')
 								p Next
 								i.glyphicon.glyphicon-chevron-down
-				.slide.slide--content.slide--2
+				section.slide.slide--content.slide--2
 					.slideContentWrapper
 						h3 2:20 - 2:30
 						h2 HEADLINE HEADLINE HEAD 2
@@ -111,25 +119,30 @@ html(class="no-js", lang="en")
 							span 2 Lorem ipsum dolor sit amet 
 							| consectetur adipiscing elit. Cras egestas leo sit amet sem varius aliquet. Pellentesque tempus dignissim nunc, ac lobortis eros sodales sit amet. Duis rutrum vehicula metus rhoncus ultrices.
 						.media
-							img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
-							p.caption 2 Lorem ipsum dolor sit amet
+							.media__item.media__item--av.media__item--2-0.active
+								.video
+									iframe(src="https://player.vimeo.com/video/189565735" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+							.media__item.media__item--image.media__item--2-1
+								img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
+								p.caption 2 Lorem ipsum dolor sit amet
+							.media__item.media__item--av.media__item--2-2
 						.mediaList
 							h4 Multimedia
 							ul
 								li
-									.mediaWrapper
+									.mediaButton(data-media="2-0")
 										i.glyphicon.glyphicon-play-circle
 										p 11:11 p.m.: Video of police entering the apartment for the first time
 								li
-									.mediaWrapper
+									.mediaButton(data-media="2-1")
 										i.glyphicon.glyphicon-headphones
 										p Audio of 911 dispatch
 								li
-									.mediaWrapper
+									.mediaButton(data-media="2-2")
 										i.glyphicon.glyphicon-picture
 										p Photos taken from Gaines' cell phone
 								li
-									.mediaWrapper
+									.mediaButton(data-media="2-3")
 										i.glyphicon.glyphicon-folder-open
 										p Relevant documents
 						.buttonsWrap
@@ -139,7 +152,7 @@ html(class="no-js", lang="en")
 							.button.button--down(data-toslide='3')
 								p Next
 								i.glyphicon.glyphicon-chevron-down
-				.slide.slide--content.slide--3
+				section.slide.slide--content.slide--3
 					.slideContentWrapper
 						h3 3:20 - 3:30
 						h2 HEADLINE HEADLINE HEAD 3
@@ -147,25 +160,28 @@ html(class="no-js", lang="en")
 							span 3 Lorem ipsum dolor sit amet 
 							| consectetur adipiscing elit. Cras egestas leo sit amet sem varius aliquet. Pellentesque tempus dignissim nunc, ac lobortis eros sodales sit amet. Duis rutrum vehicula metus rhoncus ultrices.
 						.media
-							img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
-							p.caption 3 Lorem ipsum dolor sit amet
+							.media__item.media__item--image.media__item--3-0.active
+								img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
+								p.caption 3 Lorem ipsum dolor sit amet
+							.media__item.media__item--av.media__item--3-1
+							.media__item.media__item--av.media__item--3-2
 						.mediaList
 							h4 Multimedia
 							ul
 								li
-									.mediaWrapper
+									.mediaButton(data-media="3-0")
 										i.glyphicon.glyphicon-play-circle
 										p 11:11 p.m.: Video of police entering the apartment for the first time
 								li
-									.mediaWrapper
+									.mediaButton(data-media="3-1")
 										i.glyphicon.glyphicon-headphones
 										p Audio of 911 dispatch
 								li
-									.mediaWrapper
+									.mediaButton(data-media="3-2")
 										i.glyphicon.glyphicon-picture
 										p Photos taken from Gaines' cell phone
 								li
-									.mediaWrapper
+									.mediaButton(data-media="3-3")
 										i.glyphicon.glyphicon-folder-open
 										p Relevant documents
 						.buttonsWrap
@@ -175,7 +191,7 @@ html(class="no-js", lang="en")
 							.button.button--down(data-toslide='4')
 								p Next
 								i.glyphicon.glyphicon-chevron-down
-				.slide.slide--content.slide--4
+				section.slide.slide--content.slide--4
 					.slideContentWrapper
 						h3 4:20 - 4:30
 						h2 HEADLINE HEADLINE HEAD 4
@@ -183,25 +199,28 @@ html(class="no-js", lang="en")
 							span 4 Lorem ipsum dolor sit amet 
 							| consectetur adipiscing elit. Cras egestas leo sit amet sem varius aliquet. Pellentesque tempus dignissim nunc, ac lobortis eros sodales sit amet. Duis rutrum vehicula metus rhoncus ultrices.
 						.media
-							img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
-							p.caption 4 Lorem ipsum dolor sit amet
+							.media__item.media__item--image.media__item--4-0.active
+								img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
+								p.caption 4 Lorem ipsum dolor sit amet
+							.media__item.media__item--av.media__item--4-1
+							.media__item.media__item--av.media__item--4-2
 						.mediaList
 							h4 Multimedia
 							ul
 								li
-									.mediaWrapper
+									.mediaButton(data-media="4-0")
 										i.glyphicon.glyphicon-play-circle
 										p 11:11 p.m.: Video of police entering the apartment for the first time
 								li
-									.mediaWrapper
+									.mediaButton(data-media="4-1")
 										i.glyphicon.glyphicon-headphones
 										p Audio of 911 dispatch
 								li
-									.mediaWrapper
+									.mediaButton(data-media="4-2")
 										i.glyphicon.glyphicon-picture
 										p Photos taken from Gaines' cell phone
 								li
-									.mediaWrapper
+									.mediaButton(data-media="4-3")
 										i.glyphicon.glyphicon-folder-open
 										p Relevant documents
 						.buttonsWrap
@@ -211,7 +230,7 @@ html(class="no-js", lang="en")
 							.button.button--down(data-toslide='5')
 								p Next
 								i.glyphicon.glyphicon-chevron-down
-				.slide.slide--content.slide--5
+				section.slide.slide--content.slide--5
 					.slideContentWrapper
 						h3 5:20 - 5:30
 						h2 HEADLINE HEADLINE HEAD 5
@@ -219,25 +238,28 @@ html(class="no-js", lang="en")
 							span 5 Lorem ipsum dolor sit amet 
 							| consectetur adipiscing elit. Cras egestas leo sit amet sem varius aliquet. Pellentesque tempus dignissim nunc, ac lobortis eros sodales sit amet. Duis rutrum vehicula metus rhoncus ultrices.
 						.media
-							img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
-							p.caption 5 Lorem ipsum dolor sit amet
+							.media__item.media__item--image.media__item--5-0.active
+								img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
+								p.caption 5 Lorem ipsum dolor sit amet
+							.media__item.media__item--av.media__item--5-1
+							.media__item.media__item--av.media__item--5-2
 						.mediaList
 							h4 Multimedia
 							ul
 								li
-									.mediaWrapper
+									.mediaButton(data-media="5-0")
 										i.glyphicon.glyphicon-play-circle
 										p 11:11 p.m.: Video of police entering the apartment for the first time
 								li
-									.mediaWrapper
+									.mediaButton(data-media="5-1")
 										i.glyphicon.glyphicon-headphones
 										p Audio of 911 dispatch
 								li
-									.mediaWrapper
+									.mediaButton(data-media="5-2")
 										i.glyphicon.glyphicon-picture
 										p Photos taken from Gaines' cell phone
 								li
-									.mediaWrapper
+									.mediaButton(data-media="5-3")
 										i.glyphicon.glyphicon-folder-open
 										p Relevant documents
 						.buttonsWrap
@@ -247,7 +269,7 @@ html(class="no-js", lang="en")
 							.button.button--down(data-toslide='6')
 								p Next
 								i.glyphicon.glyphicon-chevron-down
-				.slide.slide--content.slide--6
+				section.slide.slide--content.slide--6
 					.slideContentWrapper
 						h3 6:20 - 6:30
 						h2 HEADLINE HEADLINE HEAD 6
@@ -255,25 +277,28 @@ html(class="no-js", lang="en")
 							span 6 Lorem ipsum dolor sit amet 
 							| consectetur adipiscing elit. Cras egestas leo sit amet sem varius aliquet. Pellentesque tempus dignissim nunc, ac lobortis eros sodales sit amet. Duis rutrum vehicula metus rhoncus ultrices.
 						.media
-							img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
-							p.caption 6 Lorem ipsum dolor sit amet
+							.media__item.media__item--image.media__item--6-0.active
+								img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
+								p.caption 6 Lorem ipsum dolor sit amet
+							.media__item.media__item--av.media__item--6-1
+							.media__item.media__item--av.media__item--6-2
 						.mediaList
 							h4 Multimedia
 							ul
 								li
-									.mediaWrapper
+									.mediaButton(data-media="6-0")
 										i.glyphicon.glyphicon-play-circle
 										p 11:11 p.m.: Video of police entering the apartment for the first time
 								li
-									.mediaWrapper
+									.mediaButton(data-media="6-1")
 										i.glyphicon.glyphicon-headphones
 										p Audio of 911 dispatch
 								li
-									.mediaWrapper
+									.mediaButton(data-media="6-2")
 										i.glyphicon.glyphicon-picture
 										p Photos taken from Gaines' cell phone
 								li
-									.mediaWrapper
+									.mediaButton(data-media="6-3")
 										i.glyphicon.glyphicon-folder-open
 										p Relevant documents
 						.buttonsWrap
@@ -283,7 +308,7 @@ html(class="no-js", lang="en")
 							.button.button--down(data-toslide='7')
 								p Next
 								i.glyphicon.glyphicon-chevron-down
-				.slide.slide--content.slide--7
+				section.slide.slide--content.slide--7
 					.slideContentWrapper
 						h3 7:20 - 7:30
 						h2 HEADLINE HEADLINE HEAD 7
@@ -291,25 +316,28 @@ html(class="no-js", lang="en")
 							span 7 Lorem ipsum dolor sit amet 
 							| consectetur adipiscing elit. Cras egestas leo sit amet sem varius aliquet. Pellentesque tempus dignissim nunc, ac lobortis eros sodales sit amet. Duis rutrum vehicula metus rhoncus ultrices.
 						.media
-							img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
-							p.caption 7 Lorem ipsum dolor sit amet
+							.media__item.media__item--image.media__item--7-0.active
+								img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
+								p.caption 7 Lorem ipsum dolor sit amet
+							.media__item.media__item--av.media__item--7-1
+							.media__item.media__item--av.media__item--7-2
 						.mediaList
 							h4 Multimedia
 							ul
 								li
-									.mediaWrapper
+									.mediaButton(data-media="7-0")
 										i.glyphicon.glyphicon-play-circle
 										p 11:11 p.m.: Video of police entering the apartment for the first time
 								li
-									.mediaWrapper
+									.mediaButton(data-media="7-1")
 										i.glyphicon.glyphicon-headphones
 										p Audio of 911 dispatch
 								li
-									.mediaWrapper
+									.mediaButton(data-media="7-2")
 										i.glyphicon.glyphicon-picture
 										p Photos taken from Gaines' cell phone
 								li
-									.mediaWrapper
+									.mediaButton(data-media="7-3")
 										i.glyphicon.glyphicon-folder-open
 										p Relevant documents
 						.buttonsWrap
@@ -319,7 +347,7 @@ html(class="no-js", lang="en")
 							.button.button--down(data-toslide='8')
 								p Next
 								i.glyphicon.glyphicon-chevron-down
-				.slide.slide--content.slide--8
+				section.slide.slide--content.slide--8
 					.slideContentWrapper
 						h3 8:20 - 8:30
 						h2 HEADLINE HEADLINE HEAD 8
@@ -327,25 +355,28 @@ html(class="no-js", lang="en")
 							span 8 Lorem ipsum dolor sit amet 
 							| consectetur adipiscing elit. Cras egestas leo sit amet sem varius aliquet. Pellentesque tempus dignissim nunc, ac lobortis eros sodales sit amet. Duis rutrum vehicula metus rhoncus ultrices.
 						.media
-							img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
-							p.caption 8 Lorem ipsum dolor sit amet
+							.media__item.media__item--image.media__item--8-0.active
+								img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
+								p.caption 8 Lorem ipsum dolor sit amet
+							.media__item.media__item--av.media__item--8-1
+							.media__item.media__item--av.media__item--8-2
 						.mediaList
 							h4 Multimedia
 							ul
 								li
-									.mediaWrapper
+									.mediaButton(data-media="8-0")
 										i.glyphicon.glyphicon-play-circle
 										p 11:11 p.m.: Video of police entering the apartment for the first time
 								li
-									.mediaWrapper
+									.mediaButton(data-media="8-1")
 										i.glyphicon.glyphicon-headphones
 										p Audio of 911 dispatch
 								li
-									.mediaWrapper
+									.mediaButton(data-media="8-2")
 										i.glyphicon.glyphicon-picture
 										p Photos taken from Gaines' cell phone
 								li
-									.mediaWrapper
+									.mediaButton(data-media="8-3")
 										i.glyphicon.glyphicon-folder-open
 										p Relevant documents
 						.buttonsWrap
@@ -355,7 +386,7 @@ html(class="no-js", lang="en")
 							.button.button--down(data-toslide='9')
 								p Next
 								i.glyphicon.glyphicon-chevron-down
-				.slide.slide--content.slide--9
+				section.slide.slide--content.slide--9
 					.slideContentWrapper
 						h3 9:20 - 9:30
 						h2 HEADLINE HEADLINE HEAD 9
@@ -363,25 +394,28 @@ html(class="no-js", lang="en")
 							span 9 Lorem ipsum dolor sit amet 
 							| consectetur adipiscing elit. Cras egestas leo sit amet sem varius aliquet. Pellentesque tempus dignissim nunc, ac lobortis eros sodales sit amet. Duis rutrum vehicula metus rhoncus ultrices.
 						.media
-							img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
-							p.caption 9 Lorem ipsum dolor sit amet
+							.media__item.media__item--image.media__item--9-0.active
+								img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
+								p.caption 9 Lorem ipsum dolor sit amet
+							.media__item.media__item--av.media__item--9-1
+							.media__item.media__item--av.media__item--9-2
 						.mediaList
 							h4 Multimedia
 							ul
 								li
-									.mediaWrapper
+									.mediaButton(data-media="9-0")
 										i.glyphicon.glyphicon-play-circle
 										p 11:11 p.m.: Video of police entering the apartment for the first time
 								li
-									.mediaWrapper
+									.mediaButton(data-media="9-1")
 										i.glyphicon.glyphicon-headphones
 										p Audio of 911 dispatch
 								li
-									.mediaWrapper
+									.mediaButton(data-media="9-2")
 										i.glyphicon.glyphicon-picture
 										p Photos taken from Gaines' cell phone
 								li
-									.mediaWrapper
+									.mediaButton(data-media="9-3")
 										i.glyphicon.glyphicon-folder-open
 										p Relevant documents
 						.buttonsWrap

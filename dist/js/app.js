@@ -2976,7 +2976,7 @@ var gainesTimeline = {
         $(".button").on("click", function() {
             var toSlide = $(this).data("toslide");
             $(".slide--" + toSlide).scrollTop(0);
-            $("html,body").animate({
+            $("html, body").animate({
                 scrollTop: $(".slide--" + toSlide).offset().top
             }, "fast");
         });
