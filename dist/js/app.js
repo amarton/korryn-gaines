@@ -2952,7 +2952,7 @@
 var gainesTimeline = {
     init: function() {
         gainesTimeline.scrollFunctions();
-        gainesTimeline.timeTicker();
+        gainesTimeline.mediaButtons();
     },
     share: function() {
         $(".icon-twitter").on("click", function() {
@@ -2970,15 +2970,6 @@ var gainesTimeline = {
             var facebook_url = "https://www.facebook.com/dialog/feed?display=popup&app_id=310302989040998&link=" + url + "&picture=" + picture + "&name=" + title + "&description=" + description + "&redirect_uri=http://www.facebook.com";
             window.open(facebook_url, "mywin", "left=200,top=200,width=500,height=300,toolbar=1,resizable=0");
             return false;
-        });
-    },
-    scrollFunctions: function() {
-        $(".button").on("click", function() {
-            var toSlide = $(this).data("toslide");
-            $(".slide--" + toSlide).scrollTop(0);
-            $("html, body").animate({
-                scrollTop: $(".slide--" + toSlide).offset().top
-            }, "fast");
         });
     },
     timeTicker: function() {
@@ -3017,6 +3008,48 @@ var gainesTimeline = {
     },
     setTime: function(slide) {
         if (slide === 0) {}
+    },
+    scrollFunctions: function() {
+        $(".button--dir").on("click", function() {
+            var toSlide = $(this).data("toslide");
+            $(".slide--" + toSlide).scrollTop(0);
+            $("html, body").animate({
+                scrollTop: $(".slide--" + toSlide).offset().top
+            }, "fast");
+        });
+        $(".button--splash").on("click", function() {
+            gainesTimeline.timeTicker();
+        });
+    },
+    mediaButtons: function() {
+        $(".mediaButton--main").on("click", function() {
+            var currSlide = $(this).data("slide");
+            var currMedia = $(".media__item--" + currSlide);
+            var nextMedia = $(".media__item--" + currSlide + "--" + $(this).data("media"));
+            currMedia.removeClass("active");
+            nextMedia.addClass("active");
+        });
+        $(".mediaButton--lightbox").on("click", function() {
+            var currSlide = $(this).data("slide");
+            var docNum = $(this).data("media");
+            $(".mediaOverlay--" + currSlide + "--" + docNum).fadeIn();
+            switch (docNum) {
+              case 0:
+                DV.load("https://www.documentcloud.org/documents/3211561-Sports-Roundtable-110116.js", {
+                    sidebar: false,
+                    text: false,
+                    container: "#DV-viewer-3211561-Sports-Roundtable-110116",
+                    responsive: true
+                });
+                break;
+            }
+        });
+        $(".button--exit").on("click", function() {
+            $(".mediaOverlay").fadeOut();
+        });
+        $(".mediaOverlay").on("click", function() {
+            $(".mediaOverlay").fadeOut();
+        });
     }
 };
 
