@@ -44,6 +44,7 @@ body {
 	width: 100%;
 	height: 51px;
 	border-bottom: 2px solid $c-a-00;
+	z-index: 1;
 }
 h1 {
 	font-weight: 100;
@@ -174,12 +175,13 @@ a {
 			}
 		}
 	}
-	img {
-		width: 100%;
-	}
 	.caption {
 		margin-top: .25em;
-		text-align: right;
+		float: right;
+		text-align: left;
+	}
+	img {
+		width: 100%;
 	}
 	.mediaOverlay {
 		display: none;
@@ -189,18 +191,19 @@ a {
 		width: 100%;
 		height: 100%;
 		background: rgba(0,0,0, .7);
-		z-index: 1;
+		z-index: 5;
 	}
 	.docCloud {
 		position: relative;
 		height: 70%;
 		width: 70%;
 		margin: 1em auto;
+		z-index: 6;
 	}
 	h4 {
 		text-transform: uppercase;
 		font-size: 1.5em;
-		margin: .25em 0;
+		margin: 1.5em 0 .25em 0;
 	}
 	ul {
 		margin: 0;
@@ -314,11 +317,15 @@ a {
 	}
 }
 .phoneImage {
+	display: none;
 	position: fixed;
 	bottom: 0;
 	right: 2%;
 	width: 100%;
 	z-index: -5;
+	@media(min-width: $ipad + 1) {
+		display: block;
+	}
 }
 .svgWrapper {
 	width: 60%;

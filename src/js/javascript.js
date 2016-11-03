@@ -2,11 +2,12 @@ var gainesTimeline = {
 	init: function(){
 		gainesTimeline.scrollFunctions();
 		gainesTimeline.mediaButtons();
-		gainesTimeline.share();
+		gainesTimeline.timeTicker();
+		gainesTimeline.share();	
 	},
 	share: function(){
 		$(".icon-twitter").on("click", function(){
-			var tweet = "Explore newly released evidence in the police standoff and death of #KorrynGaines"; //Tweet text
+			var tweet = "Explore newly released evidence in the death of Korryn Gaines"; //Tweet text
 			var url = "http://data.baltimoresun.com/news/korryn-gaines/images/facebook-thumb.png"; //Interactive URL
 			var twitter_url = "https://twitter.com/intent/tweet?text="+tweet+"&url="+url+"&tw_p=tweetbutton";
 			window.open(twitter_url, 'mywin','left=200,top=200,width=500,height=300,toolbar=1,resizable=0'); return false;
@@ -14,7 +15,7 @@ var gainesTimeline = {
 		$(".icon-facebook").on("click", function(){
 			var picture = "http://data.baltimoresun.com/news/korryn-gaines/images/facebook-thumb.png"; //Picture URL
 			var title = "The 6-hour Standoff of Korryn Gaines"; //Post title
-			var description = "Explore newly released evidence in the police standoff and death of #KorrynGaines"; //Post description
+			var description = "Explore newly released evidence in the death of Korryn Gaines"; //Post description
 			var url = "http://data.baltimoresun.com/news/korryn-gaines/"; //Interactive URL
 	    	var facebook_url = "https://www.facebook.com/dialog/feed?display=popup&app_id=310302989040998&link="+url+"&picture="+picture+"&name="+title+"&description="+description+"&redirect_uri=http://www.facebook.com";    		
 			window.open(facebook_url, 'mywin','left=200,top=200,width=500,height=300,toolbar=1,resizable=0'); return false;
@@ -67,26 +68,22 @@ var gainesTimeline = {
 				scrollTop: $('.slide--'+toSlide).offset().top},
 			'fast');
 		});
-		$('.button--splash').on('click', function() {
-			gainesTimeline.timeTicker();
-		});
 	},
 	mediaButtons: function() {
 		$('.mediaButton--main').on('click', function() {
-			$('.mediaButton.active').removeClass('active');
-			$(this).addClass('active');
 			var currSlide = $(this).data('slide');
+			$('.mediaList--' + currSlide + ' .mediaButton.active').removeClass('active');
+			$(this).addClass('active');
 			var currMedia = $('.media__item--' + currSlide);
 			var nextMedia = $('.media__item--' + currSlide + '--' + $(this).data('media'));
-			// currMedia.fadeOut(function() {
-				currMedia.removeClass('active');
-				nextMedia.addClass('active');
-			// });
+			stopVids();
+			currMedia.removeClass('active');
+			nextMedia.addClass('active');
 		});
 		$('.mediaButton--lightbox').on('click', function() {
+			stopVids();
 			var currSlide = $(this).data('slide');
 			var docNum = $(this).data('docnum');
-			console.log('.mediaOverlay--' + currSlide + '--' + docNum);
 			$('.mediaOverlay--' + currSlide + '--' + docNum).fadeIn();
 			switch(docNum) {
 				case 0:
@@ -129,26 +126,28 @@ var gainesTimeline = {
 						responsive: true
 					});
 					break;
-				case 5:
-					break;
-				case 6:
-					break;
-				case 7:
-					break;
-				case 8:
-					break;
-				case 9:
-					break;
-				case 10:
-					break;
-				case 11:
-					break;
 				default:
 					break;
 			}
 		});
+		function stopVids() {
+			var currSlide = $(this).data('slide');
+			var currMedia = $('.media__item--' + currSlide);
+			var nextMedia = $('.media__item--' + currSlide + '--' + $(this).data('media'));
+			var player;
+			var iframes = $('.media__item.active iframe');
+			for(var i = 0;i < iframes.length;i++) {
+				player = $f(iframes[i]);
+				player.api('pause');
+			};
+		}
 		$('.button--exit').on('click', function(){
 			$('.mediaOverlay').fadeOut();
+		});
+		$(document).keyup(function(e) {
+			if (e.keyCode == 27) {
+				$('.mediaOverlay').fadeOut();
+			}
 		});
 		// $('.mediaOverlay').on('click', function(){
 		// 	$('.mediaOverlay').fadeOut();
