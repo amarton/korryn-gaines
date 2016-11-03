@@ -1599,6 +1599,8 @@ a {
     .slide li p {
       padding-left: 4em;
       margin: 0; }
+    .slide li .warning {
+      font-weight: 700; }
   .slide .buttonsWrap {
     width: 200px;
     margin: 2em auto; }
