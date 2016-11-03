@@ -3023,6 +3023,8 @@ var gainesTimeline = {
     },
     mediaButtons: function() {
         $(".mediaButton--main").on("click", function() {
+            $(".mediaButton.active").removeClass("active");
+            $(this).addClass("active");
             var currSlide = $(this).data("slide");
             var currMedia = $(".media__item--" + currSlide);
             var nextMedia = $(".media__item--" + currSlide + "--" + $(this).data("media"));
@@ -3031,23 +3033,33 @@ var gainesTimeline = {
         });
         $(".mediaButton--lightbox").on("click", function() {
             var currSlide = $(this).data("slide");
-            var docNum = $(this).data("media");
+            var docNum = $(this).data("docnum");
+            console.log(".mediaOverlay--" + currSlide + "--" + docNum);
             $(".mediaOverlay--" + currSlide + "--" + docNum).fadeIn();
             switch (docNum) {
               case 0:
-                DV.load("https://www.documentcloud.org/documents/3211561-Sports-Roundtable-110116.js", {
+                DV.load("https://www.documentcloud.org/documents/3212766-Gaines-Previous-Arrest-Report.js", {
                     sidebar: false,
                     text: false,
-                    container: "#DV-viewer-3211561-Sports-Roundtable-110116",
+                    container: "#DV-viewer-3212766-Gaines-Previous-Arrest-Report",
                     responsive: true
                 });
+                break;
+
+              case 1:
+                DV.load("https://www.documentcloud.org/documents/3212765-Warrant-Kareem-Courtney.js", {
+                    sidebar: false,
+                    text: false,
+                    container: "#DV-viewer-3212765-Warrant-Kareem-Courtney",
+                    responsive: true
+                });
+                break;
+
+              default:
                 break;
             }
         });
         $(".button--exit").on("click", function() {
-            $(".mediaOverlay").fadeOut();
-        });
-        $(".mediaOverlay").on("click", function() {
             $(".mediaOverlay").fadeOut();
         });
     }
