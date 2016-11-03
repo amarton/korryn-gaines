@@ -19,9 +19,9 @@ html(class="no-js", lang="en")
 	head
 		//Basic page needs
 		meta(charset="utf-8")
-		title
-		meta(name="description", content="")
-		meta(name="author", content="") 
+		title The 6-hour Standoff of Korryn Gaines | The Baltimore Sun
+		meta(name="description", content="A news interactive exploring newly-released evidence in the police standoff and death of Korryn Gaines")
+		meta(name="author", content="baltimoresun.com") 
 		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
 		link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?family=Old+Standard+TT|Lato|Montserrat|Prata")
 
@@ -31,23 +31,23 @@ html(class="no-js", lang="en")
 		link(rel="stylesheet", type="text/css", href=datalink + "css/style.css")
 
 		//Facebook Stuff
-		meta(property="og:title", content="")
-		meta(property="og:url", content="")
-		meta(property="og:image", content="")
+		meta(property="og:title", content="The 6-hour Standoff of Korryn Gaines")
+		meta(property="og:url", content="http://data.baltimoresun.com/news/korryn-gaines/")
+		meta(property="og:image", content="http://data.baltimoresun.com/news/korryn-gaines/images/facebook-thumb.png")
 		meta(property="og:site_name", content="The Baltimore Sun")
-		meta(property="og:description", content="")
+		meta(property="og:description", content="Explore newly released evidence in the police standoff and death of #KorrynGaines")
 		meta(property="fb:app_id", content="310302989040998")
 		//Twitter Stuff
 		meta(name="twitter:card", content="summary")
 		meta(name="twitter:site", content="@baltimoresun")
-		meta(name="twitter:creator", content="")
-		meta(name="twitter:title", content="")
-		meta(name="twitter:description", content="")
-		meta(name="twitter:image", content="")
+		meta(name="twitter:creator", content="@baltimoresun")
+		meta(name="twitter:title", content="The 6-hour Standoff of Korryn Gaines")
+		meta(name="twitter:description", content="Explore newly released evidence in the police standoff and death of #KorrynGaines")
+		meta(name="twitter:image", content="http://data.baltimoresun.com/news/korryn-gaines/images/twitter-thumb.png")
 		meta(name="twitter:domain", content="baltimoresun.com")
 
 		//- Ad tag, uncomment to put in ad. Be sure to uncomment the ad-for-body below.
-		//- include includes/ad-for-header.html
+		include includes/ad-for-header.html
 		
 	body
 		//- This omniture file will also add a topnav. 
@@ -61,7 +61,10 @@ html(class="no-js", lang="en")
 					h1 The 6-hour standoff of
 						br
 						span Korryn Gaines
-					p.chatter.chatter--intro
+					.shareTools
+						i.icon-facebook
+						i.icon-twitter
+					p.chatter.chatter--intro.chatter--first
 						span On the morning of Aug. 1, 
 						| officers with the Baltimore County Police Department arrived at the Randallstown apartment of Korryn Gaines to serve warrants on her and her fiance, Kareem Courtney. After a standoff that lasted about six hours, Gaines was dead from police gunfire. County prosecutors would rule the shooting justified, and no charges would be filed against officers.
 					p.chatter.chatter--intro Through a public records request, The Baltimore Sun obtained and reviewed a trove of evidence in the case, from officer statements and police radio chatter to crime scene photographs and videos, pictures and audio recordings taken by Gaines during the standoff.
@@ -97,14 +100,9 @@ html(class="no-js", lang="en")
 								i.glyphicon.glyphicon-remove
 							.docCloud
 								.DV-container#DV-viewer-3212765-Warrant-Kareem-Courtney
-
 						.mediaList
 							h4 Multimedia
 							ul
-								li
-									.mediaButton.mediaButton--main.active(data-slide='1' data-media='0')
-										i.glyphicon.glyphicon-picture
-										p Still of officer’s rod as door jam
 								li
 									.mediaButton.mediaButton--lightbox(data-slide='1' data-docnum='0')
 										i.glyphicon.glyphicon-folder-open
@@ -121,6 +119,10 @@ html(class="no-js", lang="en")
 									.mediaButton.mediaButton--main(data-slide='1' data-media='2')
 										i.glyphicon.glyphicon-picture
 										p Still of apartment complex
+								li
+									.mediaButton.mediaButton--main.active(data-slide='1' data-media='0')
+										i.glyphicon.glyphicon-picture
+										p Still of officer’s rod as door jam
 						.buttonsWrap
 							.button.button--up.button--dir(data-toslide='0')
 								p Prev
@@ -156,25 +158,31 @@ html(class="no-js", lang="en")
 							h4 Multimedia
 							ul
 								li
-									.mediaButton.mediaButton--main.active(data-slide='2' data-media='0')
-										i.glyphicon.glyphicon-picture
-										p Apartment layout blueprint
-								li
 									.mediaButton.mediaButton--main(data-slide='2' data-media='1')
 										i.glyphicon.glyphicon-play-circle
-										p 10:23 a.m.
+										p 10:23 a.m. — Gaines appears seated with gun, yelling at officers
+										p Duration: 0:11
+
 								li
 									.mediaButton.mediaButton--main(data-slide='2' data-media='2')
 										i.glyphicon.glyphicon-play-circle
-										p 10:24 a.m.
+										p 10:24 a.m. — Gaines exchanges comments with officer. 
+										p Duration: 0:21
+
 								li
 									.mediaButton.mediaButton--main(data-slide='2' data-media='3')
 										i.glyphicon.glyphicon-play-circle
-										p 10:56 a.m.
+										p 10:56 a.m. — An officer/negotiator talks to Gaines from her door
+										p Duration: 1:13
+								li
+									.mediaButton.mediaButton--main.active(data-slide='2' data-media='0')
+										i.glyphicon.glyphicon-folder-open
+										p Apartment layout blueprint
 								li
 									.mediaButton.mediaButton--main(data-slide='2' data-media='4')
 										i.glyphicon.glyphicon-headphones
-										p 12 p.m. - 2 p.m.
+										p 12 p.m. — 2 p.m.
+										p Duration: 18:50
 						.buttonsWrap
 							.button.button--up.button--dir(data-toslide='1')
 								p Prev
@@ -195,79 +203,88 @@ html(class="no-js", lang="en")
 								p.caption photo caption
 							.media__item.media__item--av.media__item--3.media__item--3--1
 								.avWrap
-
+									iframe(src="https://player.vimeo.com/video/189994976" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
 							.media__item.media__item--av.media__item--3.media__item--3--2
 								.avWrap
-
+									iframe(src="https://player.vimeo.com/video/190023851" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+							.media__item.media__item--av.media__item--3.media__item--3--3
+								.avWrap
+									iframe(src="https://player.vimeo.com/video/190023919" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+							.media__item.media__item--av.media__item--3.media__item--3--4
+								.avWrap
+									iframe(src="https://player.vimeo.com/video/190093788" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+						.mediaOverlay.mediaOverlay--3.mediaOverlay--3--2
+							.button.button--exit
+								i.glyphicon.glyphicon-remove
+							.docCloud
+								.DV-container#DV-viewer-3212763-Warrant-Gaines-Standoff
 						.mediaList
 							h4 Multimedia
 							ul
 								li
-									.mediaButton.mediaButton--main(data-slide='3' data-media='0')
-										i.glyphicon.glyphicon-picture
-										p photo caption
-								li
 									.mediaButton.mediaButton--main(data-slide='3' data-media='1')
 										i.glyphicon.glyphicon-play-circle
-										p 11:11 p.m.: Video of police entering the apartment for the first time
+										p 12:24 p.m. — "For anybody who want to know what I’m doing ... devil at my door"
+										p Duration: 0:59
 								li
 									.mediaButton.mediaButton--lightbox(data-slide='3' data-docnum='2')
 										i.glyphicon.glyphicon-folder-open
-										p Relevant documents
+										p 12:43 p.m. — Warrant issued for Gaines’ arrest based on standoff
 								li
-									.mediaButton.mediaButton--main(data-slide='3' data-media='1')
+									.mediaButton.mediaButton--main(data-slide='3' data-media='2')
 										i.glyphicon.glyphicon-headphones
-										p Audio of 911 dispatch
+										p 1:12 p.m. — Voice message from grandmother
+										p Duration: 0:16
 								li
-									.mediaButton.mediaButton--main(data-slide='3' data-media='1')
+									.mediaButton.mediaButton--main(data-slide='3' data-media='3')
 										i.glyphicon.glyphicon-headphones
-										p Audio of 911 dispatch
+										p 1:12 p.m. — Voice message from police
+										p Duration 0:16
 								li
-									.mediaButton.mediaButton--main(data-slide='3' data-media='0')
+									.mediaButton.mediaButton--main(data-slide='3' data-media='4')
 										i.glyphicon.glyphicon-play-circle
-										p 11:11 p.m.: Video of police entering the apartment for the first time
+										p 1:16 p.m. — Officer motions to Kodi to come out
+										p Duration: 2:48
+						.buttonsWrap
 							.button.button--up.button--dir(data-toslide='2')
 								p Prev
 								i.glyphicon.glyphicon-chevron-up
 							.button.button--down.button--dir(data-toslide='4')
 								p Next
 								i.glyphicon.glyphicon-chevron-down
+				
 				section.slide.slide--content.slide--4
 					.slideContentWrapper
-						h3 4:20 - 4:30
-						h2 HEADLINE HEADLINE HEAD 4
+						h3 1:41 p.m.
+						h2 They’re stealing the moment”
 						p 
-							span 4 Lorem ipsum dolor sit amet 
-							| consectetur adipiscing elit. Cras egestas leo sit amet sem varius aliquet. Pellentesque tempus dignissim nunc, ac lobortis eros sodales sit amet. Duis rutrum vehicula metus rhoncus ultrices.
+							span Gaines continued to become more emotional. 
+							| In a phone conversation she recorded with a police negotiator, she described her March traffic stop as traumatic, saying that she had been mistreated by police and that it had led to her miscarriage of twins. The negotiator told Gaines that the police, at this point, could not simply leave. Gaines said the officers outside her door were the same as those who previously mistreated her. She told the negotiator about Courtney being in prison during the first months of their daughter’s life, and said the police were again trying to disrupt their peaceful family life.
+
 						.media
-							.media__item.media__item--image.media__item--4.media__item--4--0.active
-								img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
-								p.caption 4 Lorem ipsum dolor sit amet
+							.media__item.media__item--image.media__item--4.media__item--4--2.active
+								img(src="images/s5-lift-to-talk.jpg")
+								p.caption photo caption
+							.media__item.media__item--av.media__item--4.media__item--4--0
+								.avWrap
+									iframe(src="https://player.vimeo.com/video/190091836" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
 							.media__item.media__item--av.media__item--4.media__item--4--1
 								.avWrap
-
-							.media__item.media__item--av.media__item--4.media__item--4--2
-								.avWrap
-
+									iframe(src="https://player.vimeo.com/video/190029421" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
 						.mediaList
 							h4 Multimedia
 							ul
 								li
 									.mediaButton.mediaButton--main(data-slide='4' data-media='0')
 										i.glyphicon.glyphicon-play-circle
-										p 11:11 p.m.: Video of police entering the apartment for the first time
+										p 1:41 p.m. — Korryn talking to 911/police
+										p Duration: 1:03
 								li
 									.mediaButton.mediaButton--main(data-slide='4' data-media='1')
 										i.glyphicon.glyphicon-headphones
-										p Audio of 911 dispatch
-								li
-									.mediaButton.mediaButton--main(data-slide='4' data-media='2')
-										i.glyphicon.glyphicon-picture
-										p Photos taken from Gaines' cell phone
-								li
-									.mediaButton.mediaButton--lightbox(data-slide='4' data-docnum='3')
-										i.glyphicon.glyphicon-folder-open
-										p Relevant documents
+										p 1:52 - 1:57 p.m. — Korryn talking to police negotiator
+										p Duration: 11:37
+
 						.buttonsWrap
 							.button.button--up.button--dir(data-toslide='3')
 								p Prev
@@ -277,40 +294,47 @@ html(class="no-js", lang="en")
 								i.glyphicon.glyphicon-chevron-down
 				section.slide.slide--content.slide--5
 					.slideContentWrapper
-						h3 5:20 - 5:30
-						h2 HEADLINE HEADLINE HEAD 5
+						h3 3:25 p.m.
+						h2 "Shots fired!”
 						p 
-							span 5 Lorem ipsum dolor sit amet 
-							| consectetur adipiscing elit. Cras egestas leo sit amet sem varius aliquet. Pellentesque tempus dignissim nunc, ac lobortis eros sodales sit amet. Duis rutrum vehicula metus rhoncus ultrices.
+							span At some point, police shut down Gaines’ Facebook account, 
+							| trying to limit her access to the outside world so she would focus on the negotiations. She recorded a video, shot from below, in which she is holding the shotgun at the ready. She bounces, shifting her weight from foot to foot, her son next to her. About 45 minutes later, an officer came across the police radio: “Shots fired!” In a subsequent statement to police, the officer who fired the shots, Officer Royce Ruby Jr., wrote that he first fired after Gaines had raised her gun in the direction of his fellow officers, because he feared for their lives. He wrote that he fired again, after entering the apartment, because Gaines had again raised her shotgun in his direction and he feared for both his life and the life of her son.
 						.media
-							.media__item.media__item--image.media__item--5.media__item--5--0.active
-								img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
-								p.caption 5 Lorem ipsum dolor sit amet
-							.media__item.media__item--av.media__item--5.media__item--5--1
+							.media__item.media__item--av.media__item--5.media__item--5--0
 								.avWrap
-
+									iframe(src="https://player.vimeo.com/video/190091692" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+							.media__item.media__item--av.media__item--5.media__item--5--1.active
+								.avWrap
+									iframe(src="https://player.vimeo.com/video/190025681" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
 							.media__item.media__item--av.media__item--5.media__item--5--2
 								.avWrap
-
+									iframe(src="https://player.vimeo.com/video/" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+						.mediaOverlay.mediaOverlay--5.mediaOverlay--5--2
+							.button.button--exit
+								i.glyphicon.glyphicon-remove
+							.docCloud
+								.DV-container#DV-viewer-3212762-Ruby-Statement
 						.mediaList
 							h4 Multimedia
 							ul
 								li
 									.mediaButton.mediaButton--main(data-slide='5' data-media='0')
 										i.glyphicon.glyphicon-play-circle
-										p 11:11 p.m.: Video of police entering the apartment for the first time
+										p 2:40 p.m. - From below, holding shotgun up, shaking with Kodi
+										p Duration: 1:35
 								li
-									.mediaButton.mediaButton--main(data-slide='5' data-media='1')
+									.mediaButton.mediaButton--main.active(data-slide='5' data-media='1')
 										i.glyphicon.glyphicon-headphones
-										p Audio of 911 dispatch
-								li
-									.mediaButton.mediaButton--main(data-slide='5' data-media='2')
-										i.glyphicon.glyphicon-picture
-										p Photos taken from Gaines' cell phone
+										p 3:25 p.m. - "Back off ... shots fired ... get a medic"
+										p Duration: 1:40
 								li
 									.mediaButton.mediaButton--lightbox(data-slide='5' data-docnum='3')
 										i.glyphicon.glyphicon-folder-open
-										p Relevant documents
+										p Officer Ruby’s statement/interview
+								li
+									.mediaButton.mediaButton--main(data-slide='5' data-media='2')
+										i.glyphicon.glyphicon-headphones
+										p waiting	
 						.buttonsWrap
 							.button.button--up.button--dir(data-toslide='4')
 								p Prev
@@ -320,40 +344,45 @@ html(class="no-js", lang="en")
 								i.glyphicon.glyphicon-chevron-down
 				section.slide.slide--content.slide--6
 					.slideContentWrapper
-						h3 6:20 - 6:30
-						h2 HEADLINE HEADLINE HEAD 6
+						h3 After 3:25 p.m.
+						h2 The standoff ends
 						p 
-							span 6 Lorem ipsum dolor sit amet 
-							| consectetur adipiscing elit. Cras egestas leo sit amet sem varius aliquet. Pellentesque tempus dignissim nunc, ac lobortis eros sodales sit amet. Duis rutrum vehicula metus rhoncus ultrices.
+							span After Gaines was shot multiple times, 
+							| a medic was called into the apartment. Gaines was pronounced dead in the apartment’s kitchen. Kodi was taken to a hospital. Ruby submitted his weapon to a superior. Photographs show the apartment of a young family suddenly transformed into a crime scene: a police rifle leaning against a wall next to a box of Pampers diapers; a baby rocker feet from Gaines’ shotgun on the floor; and, a trail of blood leading out of the kitchen from Gaines’ lifeless body.
 						.media
 							.media__item.media__item--image.media__item--6.media__item--6--0.active
-								img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
-								p.caption 6 Lorem ipsum dolor sit amet
-							.media__item.media__item--av.media__item--6.media__item--6--1
-								.avWrap
-
-							.media__item.media__item--av.media__item--6.media__item--6--2
-								.avWrap
-
+								img(src="images/s7-gun-diapers.jpg")
+								p.caption Still of officer’s gun, pampers
+							.media__item.media__item--image.media__item--6.media__item--6--1
+								img(src="images/s7-shotgun.jpg")
+								p.caption Still of Gaines’ shotgun
+							.media__item.media__item--image.media__item--6.media__item--6--2
+								img(src="images/s7-rocker.jpg")
+								p.caption Still of baby rocker, blood trail, shotgun
+							.media__item.media__item--image.media__item--6.media__item--6--3
+								img(src="images/s7-marker.jpg")
+								p.caption Evidence marker, blood
 						.mediaList
 							h4 Multimedia
 							ul
 								li
-									.mediaButton.mediaButton--main(data-slide='6' data-media='0')
-										i.glyphicon.glyphicon-play-circle
-										p 11:11 p.m.: Video of police entering the apartment for the first time
+									.mediaButton.mediaButton--main.active(data-slide='6' data-media='0')
+										i.glyphicon.glyphicon-picture
+										p Still of officer’s gun, pampers
 								li
 									.mediaButton.mediaButton--main(data-slide='6' data-media='1')
-										i.glyphicon.glyphicon-headphones
-										p Audio of 911 dispatch
+										i.glyphicon.glyphicon-picture
+										p Still of Gaines’ shotgun
 								li
 									.mediaButton.mediaButton--main(data-slide='6' data-media='2')
 										i.glyphicon.glyphicon-picture
-										p Photos taken from Gaines' cell phone
+										p GRAPHIC CONTENT
+										p Still of baby rocker, blood trail, shotgun
 								li
-									.mediaButton.mediaButton--lightbox(data-slide='6' data-docnum='3')
-										i.glyphicon.glyphicon-folder-open
-										p Relevant documents
+									.mediaButton.mediaButton--main(data-slide='6' data-media='3')
+										i.glyphicon.glyphicon-picture
+										p GRAPHIC CONTENT
+										p Evidence marker, blood
 						.buttonsWrap
 							.button.button--up.button--dir(data-toslide='5')
 								p Prev
@@ -363,40 +392,56 @@ html(class="no-js", lang="en")
 								i.glyphicon.glyphicon-chevron-down
 				section.slide.slide--content.slide--7
 					.slideContentWrapper
-						h3 7:20 - 7:30
-						h2 HEADLINE HEADLINE HEAD 7
+						h3 Following weeks
+						h2 The aftermath
 						p 
-							span 7 Lorem ipsum dolor sit amet 
-							| consectetur adipiscing elit. Cras egestas leo sit amet sem varius aliquet. Pellentesque tempus dignissim nunc, ac lobortis eros sodales sit amet. Duis rutrum vehicula metus rhoncus ultrices.
+							span In the hours, days and weeks that followed, 
+							| Gaines’ killing became a national story. In September, Gaines’ family alleged police wrongdoing in the incident, and filed a lawsuit against the police. Shortly thereafter, Baltimore State’s Attorney Scott Shellenberger declined to file any charges against Ruby or any other officers involved in the incident. In mid-October, Baltimore County Executive Kevin Kamenetz announced that the Baltimore County Police Department would fast-track its efforts to equip county officers with body cameras.
+						.mediaOverlay.mediaOverlay--7.mediaOverlay--7--4
+							.button.button--exit
+								i.glyphicon.glyphicon-remove
+							.docCloud
+								.DV-container#DV-viewer-3212761-Shellenberger-Letter
 						.media
-							.media__item.media__item--image.media__item--7.media__item--7--0.active
-								img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
-								p.caption 7 Lorem ipsum dolor sit amet
+							.media__item.media__item--av.media__item--7.media__item--7--0.active
+								.avWrap
+									iframe(src="https://player.vimeo.com/video/190097326" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
 							.media__item.media__item--av.media__item--7.media__item--7--1
 								.avWrap
-
+									iframe(src="https://player.vimeo.com/video/190094499" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
 							.media__item.media__item--av.media__item--7.media__item--7--2
 								.avWrap
-
+									iframe(src="https://player.vimeo.com/video/190096508" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+							.media__item.media__item--av.media__item--7.media__item--7--3
+								.avWrap
+									iframe(src="https://player.vimeo.com/video/190099375" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
 						.mediaList
 							h4 Multimedia
 							ul
 								li
-									.mediaButton.mediaButton--main(data-slide='7' data-media='0')
+									.mediaButton.mediaButton--main.active(data-slide='7' data-media='0')
 										i.glyphicon.glyphicon-play-circle
-										p 11:11 p.m.: Video of police entering the apartment for the first time
+										p Shellenberger files no charges
+										p Duration: 0:57
 								li
 									.mediaButton.mediaButton--main(data-slide='7' data-media='1')
-										i.glyphicon.glyphicon-headphones
-										p Audio of 911 dispatch
+										i.glyphicon.glyphicon-play-circle
+										p Family & attorneys
+										p Duration: 3:07
+								li
+									.mediaButton.mediaButton--lightbox(data-slide='7' data-docnum='4')
+										i.glyphicon.glyphicon-folder-open
+										p Shellenberger declination letter
 								li
 									.mediaButton.mediaButton--main(data-slide='7' data-media='2')
-										i.glyphicon.glyphicon-picture
-										p Photos taken from Gaines' cell phone
+										i.glyphicon.glyphicon-play-circle
+										p Family sues
+										p Duration: 2:24
 								li
-									.mediaButton.mediaButton--lightbox(data-slide='7' data-docnum='3')
-										i.glyphicon.glyphicon-folder-open
-										p Relevant documents
+									.mediaButton.mediaButton--main(data-slide='7' data-media='3')
+										i.glyphicon.glyphicon-play-circle
+										p Body cameras
+										p Duration: 2:51
 						.buttonsWrap
 							.button.button--up.button--dir(data-toslide='6')
 								p Prev
@@ -404,96 +449,43 @@ html(class="no-js", lang="en")
 							.button.button--down.button--dir(data-toslide='8')
 								p Next
 								i.glyphicon.glyphicon-chevron-down
-				section.slide.slide--content.slide--8
+				section.slide.slide--end.slide--8
 					.slideContentWrapper
-						h3 8:20 - 8:30
-						h2 HEADLINE HEADLINE HEAD 8
+						h4 More Coverage:
+						p
+							a(href="http://www.baltimoresun.com/news/maryland/crime/bs-md-korryn-gaines-tuesday-20160802-story.html" target="_blank" rel="noopener") Woman killed by Baltimore County police ignored pleas from boyfriend to surrender, mother says
+						p
+							a(href="http://www.baltimoresun.com/news/opinion/editorial/bs-ed-korryn-gaines-20160816-story.html" target="_blank" rel="noopener") The questions raised by Gaines' death
+						p
+							a(href="http://www.baltimoresun.com/news/maryland/crime/bs-md-co-shellenberger-gaines-20160921-story.html" target="_blank" rel="noopener") No charges filed in Korryn Gaines shooting
+						p
+							a(href="http://www.baltimoresun.com/news/maryland/crime/bs-md-co-gaines-facebook-20160908-story.html" target="_blank" rel="noopener") Baltimore County police, prosecutors seek access to Korryn Gaines' private Facebook messages
+						
+						h4.credits Credits:
 						p 
-							span 8 Lorem ipsum dolor sit amet 
-							| consectetur adipiscing elit. Cras egestas leo sit amet sem varius aliquet. Pellentesque tempus dignissim nunc, ac lobortis eros sodales sit amet. Duis rutrum vehicula metus rhoncus ultrices.
-						.media
-							.media__item.media__item--image.media__item--8.media__item--8--0.active
-								img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
-								p.caption 8 Lorem ipsum dolor sit amet
-							.media__item.media__item--av.media__item--8.media__item--8--1
-								.avWrap
+							span Written by 
+							| Alison Knezevich and Kevin Rector
+						p 
+							span Interactive by 
+							| Jin Kim and Adam Marton
+						p 
+							span Multimedia editing by 
+							| Emma Patti Harris and Kalani Gordon
 
-							.media__item.media__item--av.media__item--8.media__item--8--2
-								.avWrap
+						#leaderboard
+							include includes/ad-for-body.html
 
-						.mediaList
-							h4 Multimedia
-							ul
-								li
-									.mediaButton.mediaButton--main(data-slide='8' data-media='0')
-										i.glyphicon.glyphicon-play-circle
-										p 11:11 p.m.: Video of police entering the apartment for the first time
-								li
-									.mediaButton.mediaButton--main(data-slide='8' data-media='1')
-										i.glyphicon.glyphicon-headphones
-										p Audio of 911 dispatch
-								li
-									.mediaButton.mediaButton--main(data-slide='8' data-media='2')
-										i.glyphicon.glyphicon-picture
-										p Photos taken from Gaines' cell phone
-								li
-									.mediaButton.mediaButton--lightbox(data-slide='8' data-docnum='3')
-										i.glyphicon.glyphicon-folder-open
-										p Relevant documents
 						.buttonsWrap
 							.button.button--up.button--dir(data-toslide='7')
 								p Prev
 								i.glyphicon.glyphicon-chevron-up
-							.button.button--down.button--dir(data-toslide='9')
-								p Next
-								i.glyphicon.glyphicon-chevron-down
-				section.slide.slide--content.slide--9
-					.slideContentWrapper
-						h3 9:20 - 9:30
-						h2 HEADLINE HEADLINE HEAD 9
-						p 
-							span 9 Lorem ipsum dolor sit amet 
-							| consectetur adipiscing elit. Cras egestas leo sit amet sem varius aliquet. Pellentesque tempus dignissim nunc, ac lobortis eros sodales sit amet. Duis rutrum vehicula metus rhoncus ultrices.
-						.media
-							.media__item.media__item--image.media__item--9.media__item--9--0.active
-								img(src="https://placeholdit.imgix.net/~text?txtsize=144&bg=82baf3&txt=1920%C3%971080&w=1920&h=1080")
-								p.caption 9 Lorem ipsum dolor sit amet
-							.media__item.media__item--av.media__item--9.media__item--9--1
-								.avWrap
-
-							.media__item.media__item--av.media__item--9.media__item--9--2
-								.avWrap
-
-						.mediaList
-							h4 Multimedia
-							ul
-								li
-									.mediaButton.mediaButton--main(data-slide='9' data-media='0')
-										i.glyphicon.glyphicon-play-circle
-										p 11:11 p.m.: Video of police entering the apartment for the first time
-								li
-									.mediaButton.mediaButton--main(data-slide='9' data-media='1')
-										i.glyphicon.glyphicon-headphones
-										p Audio of 911 dispatch
-								li
-									.mediaButton.mediaButton--main(data-slide='9' data-media='2')
-										i.glyphicon.glyphicon-picture
-										p Photos taken from Gaines' cell phone
-								li
-									.mediaButton.mediaButton--lightbox(data-slide='9' data-docnum='3')
-										i.glyphicon.glyphicon-folder-open
-										p Relevant documents
-						.buttonsWrap
-							.button.button--up.button--dir(data-toslide='8')
-								p Prev
-								i.glyphicon.glyphicon-chevron-up
+							.button.button--down.button--dir(data-toslide='0')
+								p Top
+								i.glyphicon.glyphicon-repeat
 				.phoneImage
 					.svgWrapper
 						include images/phone.svg
 
-		//- Ad tag, uncomment to put in ad. Be sure to uncomment the ad-for-header above.
-		//- #leaderboard			
-			include includes/ad-for-body.html
 		
 		//Javascript
 		//- MAKE SURE TO CHECK OUT package.json and look at the uglify script. 
@@ -501,4 +493,3 @@ html(class="no-js", lang="en")
 		script(src="//assets.documentcloud.org/viewer/loader.js")
 		script(src=datalink + "js/app.js")
 		//- script(src=datalink + "js/app.min.js")
-		

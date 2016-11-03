@@ -2953,20 +2953,21 @@ var gainesTimeline = {
     init: function() {
         gainesTimeline.scrollFunctions();
         gainesTimeline.mediaButtons();
+        gainesTimeline.share();
     },
     share: function() {
         $(".icon-twitter").on("click", function() {
-            var tweet = "";
-            var url = "";
+            var tweet = "Explore newly released evidence in the police standoff and death of #KorrynGaines";
+            var url = "http://data.baltimoresun.com/news/korryn-gaines/images/facebook-thumb.png";
             var twitter_url = "https://twitter.com/intent/tweet?text=" + tweet + "&url=" + url + "&tw_p=tweetbutton";
             window.open(twitter_url, "mywin", "left=200,top=200,width=500,height=300,toolbar=1,resizable=0");
             return false;
         });
         $(".icon-facebook").on("click", function() {
-            var picture = "";
-            var title = "";
-            var description = "";
-            var url = "";
+            var picture = "http://data.baltimoresun.com/news/korryn-gaines/images/facebook-thumb.png";
+            var title = "The 6-hour Standoff of Korryn Gaines";
+            var description = "Explore newly released evidence in the police standoff and death of #KorrynGaines";
+            var url = "http://data.baltimoresun.com/news/korryn-gaines/";
             var facebook_url = "https://www.facebook.com/dialog/feed?display=popup&app_id=310302989040998&link=" + url + "&picture=" + picture + "&name=" + title + "&description=" + description + "&redirect_uri=http://www.facebook.com";
             window.open(facebook_url, "mywin", "left=200,top=200,width=500,height=300,toolbar=1,resizable=0");
             return false;
@@ -3053,6 +3054,54 @@ var gainesTimeline = {
                     container: "#DV-viewer-3212765-Warrant-Kareem-Courtney",
                     responsive: true
                 });
+                break;
+
+              case 2:
+                DV.load("https://www.documentcloud.org/documents/3212763-Warrant-Gaines-Standoff.js", {
+                    sidebar: false,
+                    text: false,
+                    container: "#DV-viewer-3212763-Warrant-Gaines-Standoff",
+                    responsive: true
+                });
+                break;
+
+              case 3:
+                DV.load("https://www.documentcloud.org/documents/3212762-Ruby-Statement.js", {
+                    sidebar: false,
+                    text: false,
+                    container: "#DV-viewer-3212762-Ruby-Statement",
+                    responsive: true
+                });
+                break;
+
+              case 4:
+                DV.load("https://www.documentcloud.org/documents/3212761-Shellenberger-Letter.js", {
+                    sidebar: false,
+                    text: false,
+                    container: "#DV-viewer-3212761-Shellenberger-Letter",
+                    responsive: true
+                });
+                break;
+
+              case 5:
+                break;
+
+              case 6:
+                break;
+
+              case 7:
+                break;
+
+              case 8:
+                break;
+
+              case 9:
+                break;
+
+              case 10:
+                break;
+
+              case 11:
                 break;
 
               default:

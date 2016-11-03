@@ -371,6 +371,82 @@ td,
 th {
   padding: 0; }
 
+@font-face {
+  font-family: 'fontello';
+  src: url("fontello/fontello.eot?27266804");
+  src: url("fontello/fontello.eot?27266804#iefix") format("embedded-opentype"), url("fontello/fontello.woff2?27266804") format("woff2"), url("fontello/fontello.woff?27266804") format("woff"), url("fontello/fontello.ttf?27266804") format("truetype"), url("fontello/fontello.svg?27266804#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?27266804#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-play-circled2:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-picture:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-headphones:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-folder-open:before {
+  content: '\e803'; }
+
+/* '' */
+.icon-down-open:before {
+  content: '\e804'; }
+
+/* '' */
+.icon-up-open:before {
+  content: '\e805'; }
+
+/* '' */
+.icon-twitter:before {
+  content: '\f099'; }
+
+/* '' */
+.icon-facebook:before {
+  content: '\f09a'; }
+
+/* '' */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -1348,7 +1424,8 @@ h1 {
   color: #7fbfff;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin-bottom: .2em; }
   @media (min-width: 400px) {
     h1 {
       font-size: 1.75em; } }
@@ -1381,12 +1458,24 @@ a {
   color: #7fbfff;
   text-decoration: none; }
 
+.shareTools {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.2em; }
+  .shareTools i {
+    cursor: pointer;
+    margin-right: .3em; }
+    .shareTools i:hover {
+      color: #7fbfff; }
+
 .chatter {
   margin: 1em auto;
   text-align: left; }
   .chatter span {
     color: #7fbfff;
     font-weight: 700; }
+  .chatter--first {
+    margin-top: 0; }
   .chatter--intro {
     max-width: 600px; }
 
@@ -1510,6 +1599,14 @@ a {
   .slide .buttonsWrap {
     width: 200px;
     margin: 2em auto; }
+  .slide--end {
+    font-size: 18px; }
+    .slide--end p {
+      margin: 1em  0 0 1em; }
+      .slide--end p span {
+        color: white; }
+    .slide--end .credits {
+      margin-top: 1em; }
 
 .button {
   display: none;
@@ -1526,7 +1623,7 @@ a {
   .button:hover i {
     color: #7fbfff; }
   .button p {
-    margin: 0; }
+    margin: 1em 0; }
   .button i {
     color: white;
     font-size: 3.5em;
@@ -1551,7 +1648,7 @@ a {
   bottom: 0;
   right: 2%;
   width: 100%;
-  z-index: -1; }
+  z-index: -5; }
 
 .svgWrapper {
   width: 60%;
@@ -1566,3 +1663,12 @@ a {
     fill: #001f3f; }
 
 /* Leaderboard */
+#leaderboard {
+  width: 728px;
+  height: 90px;
+  background-color: #222222;
+  margin: 2em auto;
+  text-align: center; }
+  @media (max-width: 730px) {
+    #leaderboard {
+      display: none; } }
