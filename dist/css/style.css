@@ -1425,28 +1425,32 @@ h1 {
   color: #7fbfff;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-bottom: .2em; }
   @media (min-width: 400px) {
     h1 {
       font-size: 1.75em; } }
   @media (min-width: 500px) {
     h1 {
-      font-size: 2.5em; } }
-  @media (min-width: 600px) {
+      font-size: 2.2em; } }
+  @media (min-width: 700px) {
     h1 {
-      font-size: 3em; } }
+      font-size: 2.5em; } }
   @media (min-width: 769px) {
     h1 {
-      font-size: 3.5œem; } }
+      font-size: 2.8em;
+      margin-bottom: .5em; } }
+  @media (min-width: 900px) {
+    h1 {
+      font-size: 3em; } }
   h1 span {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: 700;
-    line-height: .5em; }
+    line-height: .75em; }
     @media (min-width: 769px) {
       h1 span {
-        font-size: 1.75em;
+        font-size: 2em;
         line-height: .75em; } }
     @media (min-width: 900px) {
       h1 span {
@@ -1492,6 +1496,16 @@ a {
   .slide .slideContentWrapper {
     max-width: 900px;
     margin: 0 auto; }
+    .slide .slideContentWrapper .shareTools {
+      float: right; }
+      .slide .slideContentWrapper .shareTools i {
+        opacity: .5; }
+        .slide .slideContentWrapper .shareTools i:hover {
+          opacity: 1; }
+        @media (min-width: 769px) {
+          .slide .slideContentWrapper .shareTools i {
+            font-size: 1.5em;
+            opacity: 1; } }
   .slide h3 {
     display: inline-block;
     margin: .5em 0 0 0;
@@ -1602,26 +1616,32 @@ a {
     .slide li .warning {
       font-weight: 700; }
   .slide .buttonsWrap {
-    width: 200px;
-    margin: 2em auto; }
+    width: 100%;
+    margin: 2em auto;
+    text-align: center; }
   .slide--end {
     font-size: 18px; }
     .slide--end p {
       margin: 1em  0 0 1em; }
       .slide--end p span {
         color: white; }
+    .slide--end h4 {
+      margin-top: 0; }
     .slide--end .credits {
       margin-top: 1em; }
+    .slide--end .buttonsWrap {
+      font-size: 14px; }
 
 .button {
   display: none;
   color: #7fbfff;
   text-align: center;
   text-transform: uppercase;
-  cursor: pointer; }
+  cursor: pointer;
+  margin: 0 1.5em; }
   @media (min-width: 769px) {
     .button {
-      display: block; } }
+      display: inline-block; } }
   .button--splash {
     display: block;
     margin: 2em auto; }
@@ -1636,17 +1656,10 @@ a {
     @media (min-width: 769px) {
       .button i {
         font-size: 4.5em; } }
-  .button--up {
-    float: left; }
-  .button--down {
-    float: right; }
-  .button--exit {
-    display: block;
-    position: absolute;
-    top: 2%;
-    right: 2%; }
-    .button--exit i {
-      font-size: 2em; }
+  .button--top {
+    display: inline-block; }
+  .button--share {
+    display: inline-block; }
 
 .phoneImage {
   display: none;

@@ -51,27 +51,31 @@ h1 {
 	color: $c-a-01;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	margin-bottom: .2em;
 	@media(min-width: $bp4) {
 		font-size: 1.75em;
 	}
 	@media(min-width: $bp5) {
+		font-size: 2.2em;
+	}
+	@media(min-width: $bp7) {
 		font-size: 2.5em;
 	}
-	@media(min-width: $bp6) {
-		font-size: 3em;
-	}
 	@media(min-width: $ipad + 1) {
-		font-size: 3.5œem;
+		font-size: 2.8em;
+		margin-bottom: .5em;
+	}
+	@media(min-width: $bp9) {
+		font-size: 3em;
 	}
 	span {
 		color: $c-text;
-		font-size: 1.5em;
+		font-size: 1.7em;
 		font-weight: 700;
-		line-height: .5em;
+		line-height: .75em;
 		@media(min-width: $ipad + 1) {
-			font-size: 1.75em;
+			font-size: 2em;
 			line-height: .75em;
 		}
 		@media(min-width: $bp9) {
@@ -124,6 +128,19 @@ a {
 	.slideContentWrapper{
 		max-width: 900px;
 		margin: 0 auto;	
+		.shareTools {
+			float: right;
+			i {
+				opacity: .5;
+				&:hover {
+					opacity: 1;
+				}
+				@media(min-width: $ipad + 1) {
+					font-size: 1.5em;
+					opacity: 1;
+				}
+			}
+		}
 	}
 	h3 {
 		display: inline-block;
@@ -258,8 +275,9 @@ a {
 		}
 	}
 	.buttonsWrap {
-		width: 200px;
+		width: 100%;
 		margin: 2em auto;
+		text-align: center;
 	}
 	&--end {
 		font-size: 18px;
@@ -269,8 +287,14 @@ a {
 				color: $c-a-00;
 			}
 		}
+		h4 {
+			margin-top: 0;
+		}
 		.credits {
 			margin-top: 1em;
+		}
+		.buttonsWrap {
+			font-size: 14px;
 		}
 	}
 }
@@ -280,8 +304,9 @@ a {
 	text-align: center;
 	text-transform: uppercase;
 	cursor: pointer;
+	margin: 0 1.5em;
 	@media(min-width: $ipad + 1) {
-		display: block;
+		display: inline-block;
 	}
 	&--splash {
 		display: block;
@@ -303,20 +328,11 @@ a {
 			font-size: 4.5em;
 		}
 	}
-	&--up {
-		float: left;
+	&--top {
+		display: inline-block;
 	}
-	&--down {
-		float: right;
-	}
-	&--exit {
-		display: block;
-		position: absolute;
-		top: 2%;
-		right: 2%;
-		i {
-			font-size: 2em;
-		}
+	&--share {
+		display: inline-block;
 	}
 }
 .phoneImage {

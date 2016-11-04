@@ -1,5 +1,6 @@
 var gainesTimeline = {
 	init: function(){
+		var slidePos = 0;
 		gainesTimeline.scrollFunctions();
 		gainesTimeline.mediaButtons();
 		gainesTimeline.timeTicker();
@@ -17,29 +18,28 @@ var gainesTimeline = {
 				setTimeout(resizeend, delta);
 			}
 		});
-
 		function resizeend() {
 			if (new Date() - rtime < delta) {
 				setTimeout(resizeend, delta);
 			} else {
 				timeout = false;
 				$('html, body').animate({
-					scrollTop: $('.slide--0').offset().top},
+					scrollTop: $('.slide--' + slidePos).offset().top},
 				'fast');
 			}
 		}
 	},
 	share: function(){
 		$(".icon-twitter").on("click", function(){
-			var tweet = "Explore newly released evidence in the death of Korryn Gaines"; //Tweet text
-			var url = "http://data.baltimoresun.com/news/korryn-gaines/images/facebook-thumb.png"; //Interactive URL
+			var tweet = "Explore newly released evidence in the police standoff and death of Korryn Gaines"; //Tweet text
+			var url = "http://data.baltimoresun.com/news/korryn-gaines/"; //Interactive URL
 			var twitter_url = "https://twitter.com/intent/tweet?text="+tweet+"&url="+url+"&tw_p=tweetbutton";
 			window.open(twitter_url, 'mywin','left=200,top=200,width=500,height=300,toolbar=1,resizable=0'); return false;
 		});
 		$(".icon-facebook").on("click", function(){
 			var picture = "http://data.baltimoresun.com/news/korryn-gaines/images/facebook-thumb.png"; //Picture URL
-			var title = "The 6-hour Standoff of Korryn Gaines"; //Post title
-			var description = "Explore newly released evidence in the death of Korryn Gaines"; //Post description
+			var title = "The 6-hour Police Standoff of Korryn Gaines"; //Post title
+			var description = "Explore newly released evidence in the police standoff and death of Korryn Gaines"; //Post description
 			var url = "http://data.baltimoresun.com/news/korryn-gaines/"; //Interactive URL
 	    	var facebook_url = "https://www.facebook.com/dialog/feed?display=popup&app_id=310302989040998&link="+url+"&picture="+picture+"&name="+title+"&description="+description+"&redirect_uri=http://www.facebook.com";    		
 			window.open(facebook_url, 'mywin','left=200,top=200,width=500,height=300,toolbar=1,resizable=0'); return false;
@@ -79,19 +79,24 @@ var gainesTimeline = {
 			}
 		}, 1000);
 	},
-	setTime: function(slide) {
-		if (slide === 0) {
-			// $('.svgPhone__text tspan', svg.root()).text('00:00:00');
-		}
-	},
 	scrollFunctions: function() {
 		$('.button--dir').on('click', function() {
+			gainesTimeline.stopVids();
 			var toSlide = $(this).data('toslide');
 			$('.slide--'+toSlide).scrollTop(0);
 			$('html, body').animate({
 				scrollTop: $('.slide--'+toSlide).offset().top},
 			'fast');
+			slidePos = toSlide;
 		});
+	},
+	stopVids: function() {
+		var player;
+		var iframes = $('.media__item.active iframe');
+		for(var i = 0;i < iframes.length;i++) {
+			player = $f(iframes[i]);
+			player.api('pause');
+		}
 	},
 	mediaButtons: function() {
 		$('.mediaButton--main').on('click', function() {
@@ -100,12 +105,12 @@ var gainesTimeline = {
 			$(this).addClass('active');
 			var currMedia = $('.media__item--' + currSlide);
 			var nextMedia = $('.media__item--' + currSlide + '--' + $(this).data('media'));
-			stopVids();
+			gainesTimeline.stopVids();
 			currMedia.removeClass('active');
 			nextMedia.addClass('active');
 		});
 		$('.mediaButton--lightbox').on('click', function() {
-			stopVids();
+			gainesTimeline.stopVids();
 			var currSlide = $(this).data('slide');
 			var docNum = $(this).data('docnum');
 			$('.mediaOverlay--' + currSlide + '--' + docNum).fadeIn();
@@ -154,17 +159,6 @@ var gainesTimeline = {
 					break;
 			}
 		});
-		function stopVids() {
-			var currSlide = $(this).data('slide');
-			var currMedia = $('.media__item--' + currSlide);
-			var nextMedia = $('.media__item--' + currSlide + '--' + $(this).data('media'));
-			var player;
-			var iframes = $('.media__item.active iframe');
-			for(var i = 0;i < iframes.length;i++) {
-				player = $f(iframes[i]);
-				player.api('pause');
-			};
-		}
 		$('.button--exit').on('click', function(){
 			$('.mediaOverlay').fadeOut();
 		});
