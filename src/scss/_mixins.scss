@@ -42,3 +42,14 @@
 @mixin striped-background($angle, $width, $color1, $color2) {
 	background: repeating-linear-gradient($angle, $color1, $color1 $width, $color2 $width, $color2 $width*2);
 }
+
+@mixin media-ipad {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		@content;
+	}
+}
+@mixin media-ipad-landscape {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+		@content;
+	}
+}

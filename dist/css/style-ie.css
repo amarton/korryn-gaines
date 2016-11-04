@@ -1740,3 +1740,6 @@ a {
   @media (max-width: 730px) {
     #leaderboard {
       display: none; } }
+
+.phoneImage {
+  display: none; }

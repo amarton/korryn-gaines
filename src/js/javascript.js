@@ -5,7 +5,9 @@ var gainesTimeline = {
 		gainesTimeline.mediaButtons();
 		gainesTimeline.timeTicker();
 		gainesTimeline.share();	
-		gainesTimeline.onResize();	
+		gainesTimeline.onResize();
+		// screen.orientation.lock('portrait');
+		// screen.lockOrientationUniversal('portrait');
 	},
 	onResize: function() {
 		var rtime;

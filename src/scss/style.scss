@@ -31,6 +31,9 @@ body {
 	@media(min-width: $ipad + 1) {
 		overflow: hidden;	
 	}
+	@include media-ipad-landscape {
+		overflow: auto;
+	}
 }
 // .container, .slidesWrapper {	
 // 	width: 100%;
@@ -101,6 +104,18 @@ a {
 			color: $c-a-01;
 		}
 	}
+	@media(min-width: $bp11) {
+		display: none;
+	}
+	&--fixed {
+		display: none;
+		@media(min-width: $bp11) {
+			display: block;
+		}
+		position: fixed;
+		top: 70px;
+		right: 20px;	
+	}
 }
 .chatter {
 	margin: 1em auto;
@@ -125,6 +140,10 @@ a {
 		height: 100vh;
 		overflow-y: scroll;	
 	}
+	@include media-ipad-landscape {
+		height: auto;
+		overflow: hidden;
+	}
 	.slideContentWrapper{
 		max-width: 900px;
 		margin: 0 auto;	
@@ -137,7 +156,6 @@ a {
 				}
 				@media(min-width: $ipad + 1) {
 					font-size: 1.5em;
-					opacity: 1;
 				}
 			}
 		}
@@ -165,7 +183,7 @@ a {
 		}
 	}
 	p {
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 		span {
 			color: $c-a-01;
 			font-weight: 700;
@@ -181,6 +199,7 @@ a {
 		&__item {
 			display: none;
 			position: relative;
+			margin-top: 2em;
 			&.active {
 				display: block;
 			}
@@ -220,7 +239,7 @@ a {
 	h4 {
 		text-transform: uppercase;
 		font-size: 1.5em;
-		margin: 1.5em 0 .25em 0;
+		margin: 2.5em 0 .25em 0;
 	}
 	ul {
 		margin: 0;
@@ -309,7 +328,7 @@ a {
 		display: inline-block;
 	}
 	&--splash {
-		display: block;
+		display: inline-block;
 		margin: 2em auto;
 	}
 	&:hover {
@@ -328,11 +347,44 @@ a {
 			font-size: 4.5em;
 		}
 	}
-	&--top {
+	&--exit {
+		display: block;
+		position: absolute;
+		top: 1%;
+		right: 0;
+		i {
+			font-size: 2em;
+		}
+	}
+	&--top, &--share {
 		display: inline-block;
 	}
-	&--share {
-		display: inline-block;
+}
+.supportUs {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	background-color: darken($c-base, 5);
+	font-size: 14px;
+	h3 {
+		font-size: 1em;
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		border-bottom: none;
+	}
+	p {
+		font-size: 1em;
+		margin: 1em 0 0 0;
+	}
+	@media(min-width: $bp5) {
+		font-size: 16px;
+		h3 {
+			font-size: 1.5em;
+		}
+		p {
+			font-size: 1em;
+		}
 	}
 }
 .phoneImage {
