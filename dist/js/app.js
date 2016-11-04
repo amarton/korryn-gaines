@@ -2989,8 +2989,8 @@ var gainesTimeline = {
             return false;
         });
         $(".icon-facebook").on("click", function() {
-            var picture = "http://data.baltimoresun.com/news/korryn-gaines/images/facebook-thumb.png";
-            var title = "The 6-hour Police Standoff of Korryn Gaines";
+            var picture = "http://data.baltimoresun.com/news/korryn-gaines/images/facebook-thumb.png0";
+            var title = "Korryn Gaines: The 6-hour police standoff";
             var description = "Explore newly released evidence in the police standoff and death of Korryn Gaines";
             var url = "http://data.baltimoresun.com/news/korryn-gaines/";
             var facebook_url = "https://www.facebook.com/dialog/feed?display=popup&app_id=310302989040998&link=" + url + "&picture=" + picture + "&name=" + title + "&description=" + description + "&redirect_uri=http://www.facebook.com";

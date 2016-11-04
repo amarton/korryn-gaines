@@ -39,8 +39,8 @@ var gainesTimeline = {
 			window.open(twitter_url, 'mywin','left=200,top=200,width=500,height=300,toolbar=1,resizable=0'); return false;
 		});
 		$(".icon-facebook").on("click", function(){
-			var picture = "http://data.baltimoresun.com/news/korryn-gaines/images/facebook-thumb.png"; //Picture URL
-			var title = "The 6-hour Police Standoff of Korryn Gaines"; //Post title
+			var picture = "http://data.baltimoresun.com/news/korryn-gaines/images/facebook-thumb.png0"; //Picture URL
+			var title = "Korryn Gaines: The 6-hour police standoff"; //Post title
 			var description = "Explore newly released evidence in the police standoff and death of Korryn Gaines"; //Post description
 			var url = "http://data.baltimoresun.com/news/korryn-gaines/"; //Interactive URL
 	    	var facebook_url = "https://www.facebook.com/dialog/feed?display=popup&app_id=310302989040998&link="+url+"&picture="+picture+"&name="+title+"&description="+description+"&redirect_uri=http://www.facebook.com";    		
